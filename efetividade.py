@@ -19,7 +19,7 @@ def predict(resultados, produtos_e_servicos, contexto, planejamento, insumos, pr
 def main():
 	st.title('Previsão de Índice de Efetividade')
 	html_temp = """
-	<div style='background-color:tomato;padding:10px'>
+	<div style='background-color:green;padding:10px'>
 	<h2 style='color:white;text-align:center;'>Sistema de Análise e Monitoramento de Gestão - SAMGe </h2>
 	</div>
 	"""
@@ -36,10 +36,10 @@ def main():
 	st.success('O índice de efetividade previsto é de: {}'.format(result))
 	if st.button('Algoritmo e Métricas'):
 		st.text('Framework: Tensorflow/Keras')
-		st.text('MSE: 0.47497658252116753')
-		st.text('RMSE: 0.6891854485703884')
+		st.text('MSE: 0,47497658252116753')
+		st.text('RMSE: 0,6891854485703884')
 	if st.button('Sobre'):
-		st.text('Desenvolvido por DMAG/COGEP/CGPLAN/DIPLAN/ICMBio')
+		st.text('Desenvolvido por DMAG/COGEP/CGPLAN/DIPLAN/ICMBio. Visite http://samge.icmbio.gov.br/')
 
 if __name__=='__main__':
 	main()
