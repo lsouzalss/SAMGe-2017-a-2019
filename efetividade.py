@@ -35,11 +35,11 @@ def main():
 		result = predict(resultados, produtos_e_servicos, contexto, planejamento, insumos, processos).round(2)
 	st.success('O índice de efetividade previsto é de: {}'.format(result))
 	if st.button('Algoritmo e Métricas'):
-		st.text('Framework: Tensorflow/Keras')
-		st.text('MSE: 0,47497658252116753')
-		st.text('RMSE: 0,6891854485703884')
+		st.write('Framework: Tensorflow/Keras')
+		st.write('Mean Squared Error(MSE): 0,47497658252116753')
+		st.write('Root Mean Squared Error(RMSE): 0,6891854485703884')
 	if st.button('Sobre'):
-		st.text('Desenvolvido por DMAG/COGEP/CGPLAN/DIPLAN/ICMBio. Visite http://samge.icmbio.gov.br/')
+		st.write('Desenvolvido por DMAG/COGEP/CGPLAN/DIPLAN/ICMBio. Visite http://samge.icmbio.gov.br/')
 
 if __name__=='__main__':
 	main()
